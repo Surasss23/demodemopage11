@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming TradeHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+        }
+
+        /* Header */
+        .header {
+            background: #000;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .sell-btn {
+            background: #7b2ff7;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+
+        .sell-btn:hover {
+            background: #5518b3;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin: 40px 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        /* Game Cards */
+        .game-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .game-card {
+            width: 180px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 0.8s forwards;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .game-card button {
+            background: transparent;
+            border: 2px solid #000;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .game-card button:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+            .sell-btn {
+                display: none;
+            }
+            .game-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="https://via.placeholder.com/30" alt="Logo">
+            Gaming TradeHub
+        </div>
+        <a href="#" class="sell-btn">Sell Your ID Now</a>
+        <div class="menu-icon">&#9776;</div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        A Marketplace You Obviously Deserve.
+    </div>
+
+    <!-- Game Cards -->
+    <div class="game-container">
+        <div class="game-card" style="animation-delay: 0.2s;">
+            <img src="https://via.placeholder.com/150?text=PUBG" alt="PUBG">
+            <button>Go</button>
+        </div>
+        <div class="game-card" style="animation-delay: 0.4s;">
+            <img src="https://via.placeholder.com/150?text=Call+of+Duty" alt="Call of Duty">
+            <button>Go</button>
+        </div>
+        <div class="game-card" style="animation-delay: 0.6s;">
+            <img src="https://via.placeholder.com/150?text=Fortnite" alt="Fortnite">
+            <button>Go</button>
+        </div>
+        <div class="game-card" style="animation-delay: 0.8s;">
+            <img src="https://via.placeholder.com/150?text=Free+Fire" alt="Free Fire">
+            <button>Go</button>
+        </div>
+    </div>
+
+</body>
+</html>
